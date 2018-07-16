@@ -1,0 +1,9 @@
+gunicorn==19.9.0
+Pillow==5.2.0
+PyAutoGUI==0.9.36
+PyMsgBox==1.0.6
+PyScreeze==0.1.14
+PyTweening==1.0.3
+virtualenv==16.0.0
+virtualenvwrapper-win==1.2.5
+whitenoise==3.3.1
