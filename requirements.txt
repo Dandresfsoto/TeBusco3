@@ -1,5 +1,7 @@
+dj-config-url==0.1.1
 Django==2.0.7
 gunicorn==19.9.0
+psycopg2==2.7.5
 pytz==2018.5
 virtualenv==16.0.0
 whitenoise==3.3.1
