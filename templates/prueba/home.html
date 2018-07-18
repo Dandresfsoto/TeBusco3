@@ -3,7 +3,42 @@
 {% block title %}Personas{% endblock %}
 {% block content %}
     {% for person in persons %}
-        <h1>{{ person.name }}</h1>
-        <img src="{{ person.photo.url }}" alt="">
+        <article class="persona bg-light">
+            <h5 style="font-weight: 600;" class="center">{{ person.name }}</h5>
+            <img src="{{ person.photo.url }}" class="left_img">
+            {% if person.gender == 'M' %}
+                <h6 class="center_a">Genero : Hombre</h6>
+            {% elif person.gender == 'F' %}
+                <h6 class="center_a">Genero : Mujer</h6>
+            {% elif person.gender == 'O' %}
+                <h6 class="center_a">Genero : Otro</h6>
+            {% endif %}
+            <h6 class="center_a">Fecha de nacimiento : {{ person.birthdate }}</h6>
+            <h6 class="center_a">Fecha de Desaparición : {{ person.disappereance }}</h6>
+            <p>
+                <a class="badge badge-info center button_des" data-toggle="collapse" href="#a{{ person.id }}"
+                   role="button"
+                   aria-expanded="false" aria-controls="a{{ person.id }}">
+                    Descripción
+                </a>
+            </p>
+            <div class="collapse" id="a{{ person.id }}">
+                <div class="card card-body center_a">
+                    {{ person.description }}
+                </div>
+            </div>
+            <p>
+                <a class="badge badge-info center button_des" data-toggle="collapse" href="#b{{ person.id }}"
+                   role="button"
+                   aria-expanded="false" aria-controls="b{{ person.id }}">
+                    Datos de la persona que lo busca
+                </a>
+            </p>
+            <div class="collapse" id="b{{ person.id }}">
+                <div class="card card-body center_a">
+                    <img src="{% static "img/noData.gif" %}" class="left_img">
+                </div>
+            </div>
+        </article>
     {% endfor %}
 {% endblock %}
