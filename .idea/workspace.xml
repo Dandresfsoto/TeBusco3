@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="517e995f-6477-4cb7-bb92-ede2d6c7f23a" name="Default" comment="Update Prueba">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TeBusco3/staticfiles/img/createSuccessful.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TeBusco3/staticfiles/img/noData.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/36992483_415879448898267_7420734242218311680_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/37196164_1771403686274141_1677143093675032576_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/TeBusco3.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="517e995f-6477-4cb7-bb92-ede2d6c7f23a" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeBusco3/staticfiles/css/styles.css" afterPath="$PROJECT_DIR$/TeBusco3/staticfiles/css/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -614,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531932632122</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Collected static files">
+      <created>1531932851075</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1531932851075</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -674,7 +672,8 @@
     <MESSAGE value="Update requirements.txt" />
     <MESSAGE value="Modification of model person" />
     <MESSAGE value="Created home template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created home template" />
+    <MESSAGE value="Collected static files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collected static files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
