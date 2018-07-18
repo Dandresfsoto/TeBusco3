@@ -13,23 +13,16 @@ class Person(models.Model):
         ('O', 'Otro'),
     )
     created_at = models.DateTimeField(auto_now_add=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=255)
     gender = models.CharField(max_length=1, choices=GENDER_CHOISES)
-    birthdate = models.DateField('Nacimiento',null=True, blank=True)
+    birthdate = models.DateField('Nacimiento', null=True, blank=True)
     disappereance = models.DateField('Desaparición', null=True, blank=True)
     description = models.TextField()
     active = models.BooleanField(default=True)
     active_manager = ActiveManager()
     objects = models.Manager()
+    photo = models.ImageField()
 
     def __str__(self):
         return self.name
-
-
-class PersonImage(models.Model):
-    person = models.ForeignKey('person.Person', on_delete=models.CASCADE, related_name='images')
-    image = models.ImageField()
-
-    def __str__(self):
-        return self.image.url

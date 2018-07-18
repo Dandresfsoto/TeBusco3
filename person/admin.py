@@ -1,15 +1,4 @@
 from django.contrib import admin
-from person.models import Person, PersonImage
+from person.models import Person
 
-
-class PersonImageInLine(admin.TabularInline):
-    model = PersonImage
-
-
-class PersonAdmin(admin.ModelAdmin):
-    inlines = [
-        PersonImageInLine
-    ]
-
-
-admin.site.register(Person, PersonAdmin)
+admin.site.register(Person)

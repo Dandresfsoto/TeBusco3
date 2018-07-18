@@ -4,5 +4,6 @@
 {% block content %}
     {% for person in persons %}
         <h1>{{ person.name }}</h1>
+        <img src="{{ person.photo.url }}" alt="">
     {% endfor %}
 {% endblock %}
