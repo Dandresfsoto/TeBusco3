@@ -44,6 +44,11 @@
     margin-bottom: 10px;
 }
 
+.icon_facebook{
+    display: inline;
+    margin: auto;
+}
+
 .gif {
     border-radius: 8px;
     display: block;
@@ -79,4 +84,12 @@
 
 titulo_nombre {
     text-align: center;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link {
+    color: #000;
 }
