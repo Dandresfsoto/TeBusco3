@@ -7,7 +7,7 @@ django-cleanup==2.1.0
 gunicorn==19.9.0
 idna==2.7
 oauthlib==2.1.0
-Pillow==5.2.0
+Pillow==9.3.0
 psycopg2==2.7.5
 PyJWT==1.6.4
 python3-openid==3.1.0
